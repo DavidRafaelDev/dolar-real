@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolar > Real</title>
-    <script>
-
-    </script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <h1>Bem-Vindo</h1>
+    <div>
+        <img id="img" src="https://comoinvestir.thecap.com.br/wp-content/uploads/2020/05/como-investir-em-dolar-e-fazer-bom-negocio.jpg" alt="">
+    </div>
     <div id="centro">
         <p>
             Esse é um conversos de valores da moeda real para a moeda dolar, no primeiro campo digite a quantidade de reais que gostaria
             de converter, já no segundo digite o valor do dolar hoje, depois clique no botão "converter"
         </p>
+    <hr>
     </div>  
-        <input type="text" name="" id=""> <br><br>
-        <input type="text"><br><br>
-    <button>Converter</button>
+        <input type="text" id="real" placeholder="R$"> <br><br>
+        <input type="text" id="dolar" placeholder="US$"><br><br>
+    <button onclick="result()" id="btn">Converter</button>
     <hr>
     <div id="resultado">
         Aqui vai aparecer seu resultado
     </div>
 </body>
 </html>
+<script>
 
-<style>
+    function result(){
+        var conver = real.value * dolar.value;
+        resultado.innerHTML = "<span class='verde'>R$"+real.value + "</span> equivale a <span class='verde'>US$" + conver.toFixed(2)+
+         "</span> com o dolar valendo <span class='verde'>US$" +  dolar.value+"</span>";
+    }
+</script>
 
-</style>

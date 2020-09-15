@@ -1,0 +1,25 @@
+#real{
+    width:100px;
+    margin-left:550px;
+}
+#dolar{
+    width:100px;
+    margin-left:550px;
+}
+#btn{
+    margin-left:560px;
+}
+#resultado{
+    margin-left:480px;
+}
+body{
+    background-color:#08D44C;
+}
+.verde{
+    background-color: #49FC97;
+    color:lightslategrey;
+}
+#img{
+    width: 400px;
+    margin-left:400px;
+}
